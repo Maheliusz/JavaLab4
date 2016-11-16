@@ -18,7 +18,7 @@ public class Car{
 	
 	public Car(IWorldMap map, int x, int y){
 		position=new Position(x,y);
-		map.add(new Car(map, position.x, position.y));
+		map.add(this);
 	}
 	
 	public void move (MoveDirection direction){
@@ -74,7 +74,7 @@ public class Car{
 	}
 	
 	
-	Position getPosition(Position position){
+	Position getPosition(){
 		return position;
 	}
 	

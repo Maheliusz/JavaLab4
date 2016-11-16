@@ -10,6 +10,11 @@ public class RectangularMap implements IWorldMap {
 		this.height=height;
 	}
 	
+	public String toString(){
+		
+		return null;
+	}
+	
 
 	@Override
 	public boolean canMoveTo(Position position) {
